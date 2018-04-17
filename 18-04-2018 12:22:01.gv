@@ -1,0 +1,15 @@
+digraph finite_state_machine { 
+    rankdir=LR;
+    size="8,5"
+    node [shape = circle, label="{GC}", fontsize=18] {GC};
+node [shape = circle, label="{Q0}", fontsize=18] {Q0};
+node [shape = doublecircle, label="{Q1}", fontsize=16] {Q1};
+node [shape = doublecircle, label="{Q0,Q1}", fontsize=16] {Q0Q1};
+node [shape = doublecircle, label="{Q2}", fontsize=16] {Q2};
+node [shape = doublecircle, label="{Q0,Q2}", fontsize=16] {Q0Q2};
+node [shape = doublecircle, label="{Q1,Q2}", fontsize=16] {Q1Q2};
+node [shape = doublecircle, label="{Q0,Q1,Q2}", fontsize=16] {Q0Q1Q2};
+
+node [shape = point ]; qi 
+qi -> {Q0};
+}
